@@ -3014,7 +3014,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 405,
+   "execution_count": 443,
    "metadata": {
     "scrolled": true
    },
@@ -3025,7 +3025,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 407,
+   "execution_count": 444,
    "metadata": {},
    "outputs": [
     {
@@ -3034,7 +3034,7 @@
        "(1218136, 122)"
       ]
      },
-     "execution_count": 407,
+     "execution_count": 444,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3045,7 +3045,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 424,
+   "execution_count": 445,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -3055,16 +3055,16 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 413,
+   "execution_count": 446,
    "metadata": {},
    "outputs": [],
    "source": [
-    "X3_train, X3_test, Y3_train, Y3_test = train_test_split(X3, Y3, test_size=0.3, random_state=42)"
+    "X3_train, X3_test, Y3_train, Y3_test = train_test_split(X3, Y3, test_size=0.3)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 414,
+   "execution_count": 447,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -3074,251 +3074,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 415,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n",
-      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.\n",
-      "  FutureWarning)\n"
-     ]
-    }
-   ],
-   "source": [
-    "logreg = LogisticRegression()\n",
-    "rfe = RFE(logreg, 20)\n",
-    "rfe = rfe.fit(X3_train, Y3_train)\n",
-    "# print(rfe.support_)\n",
-    "# print(rfe.ranking_)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 417,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "<function sklearn.feature_selection.rfe.RFE.score(self, X, y)>"
-      ]
-     },
-     "execution_count": 417,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "rfe.score"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 425,
+   "execution_count": 448,
    "metadata": {},
    "outputs": [
     {
@@ -3339,7 +3095,7 @@
        "                   warm_start=False)"
       ]
      },
-     "execution_count": 425,
+     "execution_count": 448,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3352,7 +3108,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 426,
+   "execution_count": 449,
    "metadata": {},
    "outputs": [
     {
@@ -3370,7 +3126,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 427,
+   "execution_count": 450,
    "metadata": {},
    "outputs": [
     {
@@ -3385,6 +3141,89 @@
    "source": [
     "from sklearn.metrics import confusion_matrix\n",
     "confusion_matrix = confusion_matrix(Y3_test, Y_pred)\n",
+    "print(confusion_matrix)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 439,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.ensemble import RandomForestClassifier\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 440,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/jameskim/opt/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/forest.py:245: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.\n",
+      "  \"10 in version 0.20 to 100 in 0.22.\", FutureWarning)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',\n",
+       "                       max_depth=2, max_features='auto', max_leaf_nodes=None,\n",
+       "                       min_impurity_decrease=0.0, min_impurity_split=None,\n",
+       "                       min_samples_leaf=1, min_samples_split=2,\n",
+       "                       min_weight_fraction_leaf=0.0, n_estimators='warn',\n",
+       "                       n_jobs=None, oob_score=False, random_state=0, verbose=0,\n",
+       "                       warm_start=False)"
+      ]
+     },
+     "execution_count": 440,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "clf = RandomForestClassifier(max_depth=2, random_state=0)\n",
+    "clf.fit(X3_train, Y3_train)\n",
+    "RandomForestClassifier(max_depth=2, random_state=0)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 441,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Accuracy of random forest classifier on test set: 0.80\n"
+     ]
+    }
+   ],
+   "source": [
+    "Y_pred1 = clf.predict(X3_test)\n",
+    "print('Accuracy of random forest classifier on test set: {:.2f}'.format(clf.score(X3_test, Y3_test)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 442,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[     0  71526]\n",
+      " [     0 293915]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "from sklearn.metrics import confusion_matrix\n",
+    "confusion_matrix = confusion_matrix(Y3_test, Y_pred1)\n",
     "print(confusion_matrix)"
    ]
   },
